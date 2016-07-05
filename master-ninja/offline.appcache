@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1467683546
+#1467723137
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -91,6 +91,7 @@ images/spr_tobecontinued-sheet0.png
 images/spr_foresttitle-sheet0.png
 images/spr_darkforesttitle-sheet0.png
 images/spr_cavetitle-sheet0.png
+images/spr_bossintro-sheet0.png
 media/boss%20dash.m4a
 media/boss%20dash.ogg
 media/boss%20hit.m4a
