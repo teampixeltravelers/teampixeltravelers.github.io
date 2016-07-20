@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1467823245
+#1469031096
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -66,6 +66,7 @@ images/spr_tutorialjump-sheet0.png
 images/spr_shotitem-sheet0.png
 images/spr_shotitem-sheet1.png
 images/spr_itemlife-sheet0.png
+images/tls_cutscene.png
 images/player-sheet0.png
 images/boss-sheet0.png
 images/boss-sheet1.png

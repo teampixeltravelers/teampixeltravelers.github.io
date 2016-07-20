@@ -8480,9 +8480,22 @@ window["cr_setSuspended"] = function(s)
 				glw.clearRect(clearleft, y, clearright - clearleft, h);
 				if (inst)
 				{
+					var pixelWidth;
+					var pixelHeight;
+					if (inst.curFrame && inst.curFrame.texture_img)
+					{
+						var img = inst.curFrame.texture_img;
+						pixelWidth = 1.0 / img.width;
+						pixelHeight = 1.0 / img.height;
+					}
+					else
+					{
+						pixelWidth = 1.0 / inst.width;
+						pixelHeight = 1.0 / inst.height;
+					}
 					glw.setProgramParameters(rendertarget,					// backTex
-											 1.0 / inst.width,				// pixelWidth
-											 1.0 / inst.height,				// pixelHeight
+											 pixelWidth,
+											 pixelHeight,
 											 rcTex2.left, rcTex2.top,		// destStart
 											 rcTex2.right, rcTex2.bottom,	// destEnd
 											 layerScale,
@@ -9476,9 +9489,22 @@ window["cr_setSuspended"] = function(s)
 				destEndX = screenright / windowWidth;
 				destEndY = 1 - screenbottom / windowHeight;
 			}
+			var pixelWidth;
+			var pixelHeight;
+			if (inst.curFrame && inst.curFrame.texture_img)
+			{
+				var img = inst.curFrame.texture_img;
+				pixelWidth = 1.0 / img.width;
+				pixelHeight = 1.0 / img.height;
+			}
+			else
+			{
+				pixelWidth = 1.0 / inst.width;
+				pixelHeight = 1.0 / inst.height;
+			}
 			glw.setProgramParameters(this.render_offscreen ? this.runtime.layer_tex : this.layout.getRenderTarget(), // backTex
-									 1.0 / inst.width,			// pixelWidth
-									 1.0 / inst.height,			// pixelHeight
+									 pixelWidth,
+									 pixelHeight,
 									 destStartX, destStartY,
 									 destEndX, destEndY,
 									 myscale,
@@ -28289,16 +28315,16 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Audio,
 	cr.plugins_.Browser,
 	cr.plugins_.Function,
-	cr.plugins_.Mouse,
-	cr.plugins_.gamepad,
 	cr.plugins_.Keyboard,
-	cr.plugins_.Touch,
-	cr.plugins_.TiledBg,
-	cr.plugins_.Sprite,
+	cr.plugins_.gamepad,
+	cr.plugins_.Mouse,
 	cr.plugins_.Text,
-	cr.plugins_.Tilemap,
+	cr.plugins_.Touch,
 	cr.plugins_.WebStorage,
+	cr.plugins_.TiledBg,
+	cr.plugins_.Tilemap,
 	cr.plugins_.Spritefont2,
+	cr.plugins_.Sprite,
 	cr.behaviors.destroy,
 	cr.behaviors.Bullet,
 	cr.behaviors.Platform,
