@@ -7,7 +7,7 @@ body{font-family: "Arial","Verdana","sans-serif"; font-size:0.9em;}
 .logo{border-bottom:2px solid #CCC;background:#030712 url(../images/header-pixel-travelers.png) no-repeat fixed top center;height:200px;}
 .logo section{width:960px;margin:0 auto;position:relative;}
 .logo h1,
-.logo a{display:block;text-indent:-9999999999;}
+.logo a{display:block;text-indent:-9999999999px;}
 .logo a{position:absolute;top:20px;right:0;}
 
 .jogos{width:960px;margin:0 auto;position:relative;}
