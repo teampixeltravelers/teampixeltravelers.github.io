@@ -1,0 +1,32 @@
+*{margin:0;padding:0;outline:none;}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+
+body{font-family: "Arial","Verdana","sans-serif"; font-size:0.9em;}
+
+.logo{border-bottom:2px solid #CCC;background:#030712 url(../images/header-pixel-travelers.png) no-repeat fixed top center;height:200px;}
+.logo section{width:960px;margin:0 auto;position:relative;}
+.logo h1,
+.logo a{display:block;text-indent:-9999999999;}
+.logo a{position:absolute;top:20px;right:0;}
+
+.jogos{width:960px;margin:0 auto;position:relative;}
+.jogos h1{padding:20px 0;font-size:2.2em;}
+.jogos h2{font-size:1.6em;padding-bottom:10px;}
+.jogos h3{font-size:1.1em;}
+.jogos article{background:#EAEAEA;border-left:2px solid #A7A7A7; width:100%;box-sizing:border-box;padding:20px;margin-bottom:40px;border-radius:5px;}
+.jogos article p{margin-bottom:20px;}
+.jogos article .col{display:inline-block;vertical-align:top;box-sizing:border-box;}
+.jogos article .col1{width:20%;}
+.jogos article .col1 img{width:100%;border-radius:7px;}
+.jogos article .col2{width:28%;padding:0 60px 0 20px;}
+.jogos article .col3{width:52%;padding-left:30px;}
+.jogos article .col3 a{text-decoration:underline;color:#037;}
+.jogos article .col3 a:hover{text-decoration:none;color:#077;}
+.jogos article .col3 a:active{text-decoration:none;color:#033;}
+.jogos article .col ul{width:100%;display:inline-block;box-sizing:border-box;}
+.jogos article .col li{vertical-align:top;display:inline-block;width:50%;padding-right:20px;padding-bottom:10px;box-sizing:border-box;}
+.jogos article .col li img{float:left;width:80px;border-radius:100%;margin:0 10px 10px 0;}
+.jogos article .lin{width:100%;margin-top:40px;text-align:right;}
+.jogos article .lin a{margin-left:20px;vertical-align:top;border-radius:5px;border-bottom:1px solid #09101D;display:inline-block;padding:20px;background:#1B323F;min-width:120px;text-align:center;color:#EFFEFF;font-weight:bold;text-transform:uppercase;}
+.jogos article .lin a:hover{border-bottom:0;border-top:1px solid #2C434F;background-color:#2C434F;color:#FFF;}
