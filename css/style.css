@@ -10,6 +10,7 @@ body{font-family: "Arial","Verdana","sans-serif"; font-size:0.9em;}
 .logo a{display:block;text-indent:-9999999999px;}
 .logo a{position:absolute;top:20px;right:0;}
 
+.br{display:block;}
 .jogos{width:960px;margin:0 auto;position:relative;}
 .jogos h1{padding:20px 0;font-size:2.2em;}
 .jogos h2{font-size:1.6em;padding-bottom:10px;}
@@ -30,7 +31,27 @@ body{font-family: "Arial","Verdana","sans-serif"; font-size:0.9em;}
 .jogos article .col li h3{width:100%;margin-bottom:5px;vertical-align:middle;padding-top:5px}
 .jogos article .col li p{float:left;width:90%;padding-right:20%;}
 .jogos article .lin{width:100%;margin-top:40px;text-align:right;}
-.jogos article .lin a{margin-left:20px;vertical-align:top;border-radius:5px;border-bottom:1px solid #09101D;display:inline-block;padding:20px;background:#1B323F;min-width:120px;text-align:center;color:#EFFEFF;font-weight:bold;text-transform:uppercase;}
+.jogos article .lin a{box-sizing:border-box;margin-left:20px;vertical-align:top;border-radius:5px;border-bottom:1px solid #09101D;display:inline-block;padding:20px;background:#1B323F;min-width:120px;text-align:center;color:#EFFEFF;font-weight:bold;text-transform:uppercase;}
 .jogos article .lin a:hover{border-bottom:0;border-top:1px solid #2C434F;background-color:#2C434F;color:#FFF;}
 
+@media screen and (max-width: 959px) {
+.br{display:inline;}
+.logo section{width:100%;margin:0 auto;position:relative;}
+.jogos{width:100%;text-align:center;padding:0 20px;box-sizing:border-box;font-size:1.2em;}
+.jogos article .col{margin-bottom:20px}
+.jogos article .col1{width:100%;margin-bottom:20px;}
+.jogos article .col1 img{width:80%;}
+.jogos article .col2{width:100%;padding:0;}
+.jogos article .col3{width:100%;padding:0;margin-bottom:0}
+.jogos article .col3 img{width:50%;padding:0;}
+.jogos article .col li{width:100%;padding:0;margin-bottom:10px;}
+.jogos article .col li img{width:50%;padding:0;float:none;}
+.jogos article .col li h3{width:100%;padding:0;}
+.jogos article .col li p{width:100%;padding:0;}
+.jogos article .lin a{width:100%;margin:0 0 20px 0;padding:40px 20px;}
+}
 
+
+@media screen and (max-width: 479px) {
+	.logo{background-size: 300px; height: 120px;}
+}
